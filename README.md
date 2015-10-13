@@ -12,15 +12,15 @@ The program performs the following tasks based on the data from experiments that
 From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 For each record it is provided:
-======================================
+================================================================================================
 
 - An identifier of the subject who carried out the experiment.
 - Its activity label.
 - Whether the data is a measurement type of "train" or "test" data.
 - A 561-feature vector with time and frequency domain variables. 
 
-The dataset includes the following files:
-=========================================
+The dataset includes the following files in the home directory:
+================================================================================================
 
 - 'README.md':  Top level application description.
 
