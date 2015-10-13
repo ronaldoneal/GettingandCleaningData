@@ -2,7 +2,7 @@
 
 
 ###############################################################################################
-#  Read features.txt to get the header names for the data table columns
+#  Read features.txt to get the header names for the data table columns 
 ###############################################################################################
 
 features <- read.table("features.txt", header = FALSE)
