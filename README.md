@@ -44,6 +44,39 @@ The following files are available for the train and test data. Their description
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
+==================
+
+The process followed to complete this data merge is as follows:
+
+  1.  Read features.txt to get the header names for the data table columns
+  
+  2-a. Read training data into R and merge and sort on SubjectID, ActivityID
+    b. Appropriately labels the data set with descriptive variable names (No. 4 below)
+    c. Merge on row names (row number) and add variable
+    d. Track rows matching between data tables
+    e. Merge on row names (row number)
+    f. Track rows matching between data tables
+  
+  3-a. Read test data into R and merge
+    b. Appropriately labels the data set with descriptive variable names (No. 4 below)
+    c. Merge on row names (row number) and add variable
+    d. Track rows matching between data tables
+    e. Merge on row names (row number)
+    f. Track rows matching between data tables
+    
+  4. Extracts only the measurements on the mean and standard deviation for each measurement. 
+  
+  5. Uses descriptive activity names to name the activities in the data set
+
+  6. Appropriately labels the data set with descriptive variable names.
+     
+     >>> Variable names added just after data load to minimize additional steps to track columns <<<
+
+  7. From the data set in step 6, creates a second, independent tidy data set with the 
+     average of each variable for each activity and each subject.
+
+==================
+
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
